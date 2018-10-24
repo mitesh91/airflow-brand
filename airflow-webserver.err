@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/Assasin/app/flask/bin/airflow", line 32, in <module>
+    args.func(args)
+  File "/Users/Assasin/app/flask/lib/python2.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/Assasin/app/flask/lib/python2.7/site-packages/airflow/bin/cli.py", line 876, in webserver
+    gunicorn_master_proc = psutil.Process(gunicorn_master_proc_pid)
+  File "/Users/Assasin/app/flask/lib/python2.7/site-packages/psutil/__init__.py", line 364, in __init__
+    self._init(pid)
+  File "/Users/Assasin/app/flask/lib/python2.7/site-packages/psutil/__init__.py", line 403, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 30110
